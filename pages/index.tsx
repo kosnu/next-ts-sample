@@ -5,8 +5,10 @@ type Props = {}
 
 const Index: React.FC<Props> = React.memo(({ ...props }: Props) => (
   <>
-    <p>Hello</p>
+    <Layout>
+      <p>Hello</p>
+    </Layout>
   </>
 ))
 
-export default Layout(Index)
+export default Index

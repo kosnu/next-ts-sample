@@ -1,14 +1,14 @@
 import * as React from "react"
 import { Header } from "./Header"
 
-type Props = { Page: any }
+type Props = { children: any }
 
 export const Layout: React.FC<Props> = React.memo(
-  ({ Page, ...props }: Props) => (
+  ({ children, ...props }: Props) => (
     <>
       <div style={layoutStyle} {...props}>
         <Header />
-        <Page />
+        {children}
       </div>
     </>
   ),
